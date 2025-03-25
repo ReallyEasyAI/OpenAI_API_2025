@@ -1,0 +1,47 @@
+{
+  "name": "animal_information",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The common name of the animal."
+      },
+      "species": {
+        "type": "string",
+        "description": "The species classification of the animal."
+      },
+      "lifespan": {
+        "type": "number",
+        "description": "The typical lifespan of the animal in years."
+      },
+      "min_weight": {
+        "type": "number",
+        "description": "The minimum weight the animal typically reaches in kilograms."
+      },
+      "max_weight": {
+        "type": "number",
+        "description": "The maximum weight the animal typically reaches in kilograms."
+      },
+      "habitat": {
+        "type": "string",
+        "description": "The natural habitat where the animal is commonly found."
+      },
+      "diet": {
+        "type": "string",
+        "description": "The dietary habits of the animal."
+      }
+    },
+    "required": [
+      "name",
+      "species",
+      "lifespan",
+      "min_weight",
+      "max_weight",
+      "habitat",
+      "diet"
+    ],
+    "additionalProperties": false
+  }
+}
